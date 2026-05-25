@@ -1,6 +1,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
+  nitro: {
+    preset: 'github-pages'
+  },
+  app: {
+    baseURL: '/apex-studio/',
+    buildAssetsDir: 'assets',
+  },
   css: ['~/assets/css/main.css'],
   app: {
     head: {
