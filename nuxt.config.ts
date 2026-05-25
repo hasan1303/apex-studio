@@ -4,18 +4,15 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'github-pages'
   },
-  app: {
-    baseURL: '/apex-studio/',
-    buildAssetsDir: 'assets',
-  },
   css: ['~/assets/css/main.css'],
   app: {
+    baseURL: '/apex-studio/',
     head: {
       title: 'Apex Studio — Bold Digital Agency',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=5.0' },
-        { name: 'description', content: 'Strategy-led design studio helping ambitious brands build products people love. UI/UX Design, Web Development, Brand Strategy & Digital Marketing.' },
+        { name: 'description', content: 'Strategy-led design studio helping ambitious brands build products people love.' },
         { property: 'og:title', content: 'Apex Studio — Bold Digital Agency' },
         { property: 'og:description', content: 'We craft bold digital experiences that move people and drive results.' },
         { property: 'og:type', content: 'website' },
