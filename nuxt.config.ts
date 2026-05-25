@@ -1,9 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
-  nitro: {
-    preset: 'github-pages'
-  },
   css: ['~/assets/css/main.css'],
   app: {
     baseURL: '/apex-studio/',

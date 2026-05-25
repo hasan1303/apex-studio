@@ -28,12 +28,17 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Generate static site
-        run: npm run generate
+        run: npx nuxt generate
+        env:
+          NODE_ENV: production
 
-      - name: Upload artifact
+      - name: Add .nojekyll
+        run: touch .output/public/.nojekyll
+
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .output/public
